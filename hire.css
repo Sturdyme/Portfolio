@@ -1,0 +1,121 @@
+body{
+    background-color:  rgba(9, 9, 70, 0.894);
+    margin: 0;
+    padding: 0;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+.hire-logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px 0 10px;
+}
+.nav-contents ul{
+    display: flex;
+    gap: 35px;
+    color: white;
+    list-style: none;
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+}
+.nav-contents li:hover{
+ color: rgb(102, 17, 182);
+ cursor: pointer;
+}
+.login{
+    color: white;
+    text-align: center;
+      font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    margin-top: 2rem;
+}
+
+form{
+    width: 400px;
+    height: 650px;
+    border: 1px white solid;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-left: 35%;
+    padding: 0px 20px ;
+
+}
+#name-input{
+    width: 300px;
+    padding: 10px;
+    margin-left: 2rem;
+    background-color: rgba(128, 128, 128, 0.421);
+color: aliceblue;
+}
+#email-input{
+     width: 300px;
+    padding: 10px;
+    margin-left: 2rem;
+    background-color: rgba(128, 128, 128, 0.421);
+color: aliceblue;
+}
+#date-input{
+      width: 300px;
+    padding: 10px;
+    margin-left: 2rem;
+    background-color: rgba(128, 128, 128, 0.421);
+color: aliceblue;
+}
+form p{
+    color: white;
+    margin-left: 2rem;
+}
+
+form textarea{
+    margin-left: 2rem;
+    width: 320px;
+    height: 100px;
+}
+
+form button{
+    width: 320px;
+    height: 40px;
+    margin-left: 2.3rem;
+    margin-top: 1rem;
+    color: aliceblue;
+    background-color:  rgb(12, 12, 234) ;
+}
+
+.ticker-wrapper{
+  
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: rgba(9, 9, 70, 0.894);
+    padding: 10px 0;
+    height: 50px;
+    border: 2px dotted white;
+    z-index: 9999;
+    transition: all 0.3s ease;
+    margin-top: 50px;
+}
+.ticker{
+    display: flex;
+    gap: 80px;
+    animation: scrollTicker 40s linear infinite;
+    font-family: "Dancing Script", cursive;
+}
+.ticker-item{
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 5rem;
+    font-weight: bold;
+}
+@keyframes scrollTicker{
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(-100%);}
+}
