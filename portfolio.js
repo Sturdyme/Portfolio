@@ -57,12 +57,39 @@ ticker.addEventListener("mouseenter", () =>{
     }
     console.log("")
  })
-// window.addEventListener('scroll', function() {
-//     const ticker = document.getElementById('ticker-navbar');
-//     const offSeTop = ticker.offsetTop;
-//     if (window.scrollY >= offSeTop) {
-//       ticker.classList.add('sticky');}
-//       else {
-//       ticker.classList.remove('sticky');
-//     }
-// })
+const aside = document.getElementById("aside-contents");
+const openMenu = document.getElementById("open-menu");
+const closeMenu = document.getElementById("close-menu");
+
+// default: show hamburger, hide cancel
+closeMenu.style.display = "none";
+
+openMenu.addEventListener("click", () => {
+  aside.classList.add("active");   // slide in
+  openMenu.style.display = "none";
+  closeMenu.style.display = "block";
+});
+
+closeMenu.addEventListener("click", () => {
+  aside.classList.remove("active"); // slide out
+  closeMenu.style.display = "none";
+  openMenu.style.display = "block";
+});
+
+
+  //Tyoe writing
+
+const textElement = document.getElementById("typewriter");
+  const text = textElement.innerText;  // grab the full text
+  textElement.innerText = "";          // clear it first
+
+  let i = 0;
+  function typeWriter() {
+    if (i < text.length) {
+      textElement.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, 30); // typing speed (lower = faster)
+    }
+  }
+
+  typeWriter();

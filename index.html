@@ -12,8 +12,12 @@
 </head>
 <body>
     <div class="nav-content">
-        <img id="logo-image" src="./assets/Sturdyme(1).jpg"/>
-        <div class="hamburger" id="hamburger-menu">
+      <div class="nav-items">
+        <img id="logo-image" loading="lazy"  src="./assets/Sturdyme(1).jpg"/>
+        <div id="hamburger-menu">
+         <i id="close-menu" class="fa-solid fa-x"></i>
+          <i id="open-menu" class="fa-solid fa-bars"></i> 
+      </div> 
         </div>
         <ul> 
             <li>About</li>
@@ -21,6 +25,19 @@
             <li>Projects</li>
             <li>Contact</li>
         </ul>
+
+        <aside id="aside-contents">
+      <div">
+        <i class="fa-solid fa-user"></i>
+        <ul> 
+          <li>About</li>
+           <li>Skills</li>
+            <li>Project</li>
+             <li>Contact</li>
+        </ul>
+      </div>
+        </aside>
+        
     </div>
       <section id="slider">
     <div class="slide active"> 
@@ -54,20 +71,20 @@
 
     <section class="about-me"> 
     <div class="about-content">
-        <h1>About me</h1>
-        <p>Hey there, fabulous populace of the digital realm! I am Emmanuel, A true master of Craft!! 😎</p>
+       <h1>About me</h1>
+        <p>Hey there fabulous populac of the digital realm!
+       I am Emmanuel, A true master of Craft!! 😎</p>
+      
        <div class="about-prof-contents">
-      <h3 class="color-animate">
+      <h3 class="color-animate" id="typewriter">
        Omowaye Emmanuel Boluwaji, fondly known in the tech space as 'STURDYME', is a passionate Full Stack Web Developer.  He has a deep commitment to building clean, user-friendly, and functional web applications.
        With a strong foundation in HTML, CSS, JavaScript, and ReactJS. Sturdyme has developed a professional identity that reflects not only technical skill but also a genuine love for solving problems through code. His journey into web development began with curiosity and quickly evolved into a full-blown passion,
      From the moment he discovered how lines of code could create beautiful,
   interactive digital experiences. He immersed himself in mastering the building blocks of the web, starting with HTML
 and CSS, which gave him the tools to style web pages with precision and creativity. He is deeply passionate about continuous learning, collaboration, and innovation. Whether he’s debugging code at midnight or collaborating with a designer to improve UI/UX,
  Sturdy approaches every challenge with enthusiasm and resilience. He believes that being a Full Stack Developer means more than writing code—it means understanding the user, solving real problems, and constantly improving.
-Currently, he continues to grow his backend knowledge to complement his frontend strengths, aiming to become a well-rounded full stack developer who can handle every part of the development lifecycle. For Sturdy, technology is not just a job—it’s a craft,
- a calling, and a way to bring ideas to life..With every project he takes on, Sturdy continues to prove that passion, persistence, and purpose are the foundations of a great developer.</h3>
-  
-        <img src="./assets/freepik__retouch__53956.jpeg"/>
+Currently, he continues to grow his backend knowledge to complement his frontend strengths, aiming to become a well-rounded full stack developer who can handle every part of the development lifecycle.</h3>
+        <img loading="lazy" src="./assets/freepik__retouch__53956.jpeg"/>
        </div> 
     </div>
     </section>
@@ -97,7 +114,7 @@ Currently, he continues to grow his backend knowledge to complement his frontend
   </div>
 </section>
 
-      <section id="ticker-navbar" class="ticker-wrapper"> 
+      <section  class="ticker-wrapper"> 
         <div class="ticker">
         <div class="ticker-item"><i class="fa-brands fa-html5"></i>HTML </div>
          <div class="ticker-item"><i class="fa-brands fa-css"></i></i>CSS</div>
@@ -160,9 +177,9 @@ Currently, he continues to grow his backend knowledge to complement his frontend
           <ul>
             <a><i class="fa-brands fa-instagram"></i></a>
             <a><i class="fa-brands fa-square-facebook"></i></a>
-            <a><i class="fa-brands fa-square-x-twitter"></i></a>
-            <a><i class="fa-brands fa-square-whatsapp"></i></a>
-            <a><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://x.com/cash_o_u_t?s=11" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://wa.me/+2348118602230" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/sturdy-me-433aab322/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
           </ul>
         </div>
       </div>
